@@ -1,0 +1,45 @@
+body{
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLzG_wloCMSnx47wjWAeduJtDLwTIZ0PZ_bEdVj2LWUCsmVeKo);/*She si adnem nshto drugo tva e za swega da ne zabraim :*/
+}
+#content{
+    margin-top: 80px;
+}
+body{
+    margin-bottom: 80px;
+}
+#navaigation{
+    background-color: forestgreen;
+}
+p{
+    font-family: "Ariel";
+    text-indent: 40px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+        
+}
+h1.heading{
+    font-family: "Algerian";
+    text-align: center;
+    font-size: 72px;
+    color: black;
+}
+h1,h2,h3{
+    font-family: "Impact";
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.active{
+    background-color:darkgreen;
+}
+#nav_button{
+    color: white;
+}
+#nav_button_toggle{
+    color:black;
+}
+.icon-bar {
+    background-color: white !important;
+}
