@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.contrib.auth.views import login
 from django.contrib import admin
-from dsite.views import index, profile
+from dsite.views import index, profile, caffe
 admin.autodiscover()
 
 from dsite import views
@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     # url(r'^', views.index),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', index),
+    url(r'^cafe',caffe),
     url(r'^homepage', index),
     url(r'^profile/$', profile),
     url(r'^login/$', login , {"template_name":"login.html"}),

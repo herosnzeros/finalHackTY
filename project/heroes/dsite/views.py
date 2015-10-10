@@ -10,3 +10,6 @@ def index(request):
 def profile(request):
     return render(request, 'profile.html', locals())
 
+def caffe(request):
+    return render(request, 'caffe.html', locals())
+
