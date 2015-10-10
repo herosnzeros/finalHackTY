@@ -1,0 +1,256 @@
+<!DOCTYPE>
+<html>
+        <head>
+                 <meta http-equiv="Content-Type" content="text/html; 
+            charset=utf-8" />
+                <title>Намери местенце за отдих</title>
+                <link rel="icon" type="image/jpg" href=""><!--Icon za top -->
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href = "/static/css/bootstrap.min.css" rel = "stylesheet">
+                <link href = "/static/css/styles.css" rel = "stylesheet">
+				<link rel="stylesheet" type="text/css" href="/static/mystyle.css">
+        </head>
+        <body>
+		
+		
+		<div id="header">
+                <h1 class="heading">Бързи и Удобни срещи</h1>
+		</div>
+		
+		<!--Navigation-->
+		<div id="navaigation">
+			<div class="navbar">
+				<div class = "container">
+					<a id="nav_button" href="homepage.html" class = "navbar-brand ">БУС</a>
+					<button class="navbar-toggle" data-toggle= "collapse" data-target=".navHeaderCollapse">
+						<span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+					</button>
+					
+					
+					<div class = "collapse navbar-collapse navHeaderCollapse">
+					
+						<ul class = "nav navbar-nav navbar-right">
+						
+							<li class="active"><a id="nav_button" href="homepage.html">Начална Странца</a><li>
+							<li><a href="" id="nav_button">Форум</a></li><!--Vryzka s forumcheto ako ima takoa ako ne zdrave da e -->
+							<li>
+								<a href="#" class="dropdown" id="nav_button" data-toggle="dropdown">Къде да се срещнем?<b class = "caret"></b></a>
+								<ul class = "dropdown-menu">
+									<li><a id="nav_button_toggle" href="">Кафенета</a></li><!--link kym kafenceto -->
+									<li><a  href="">Паркове</a></li><!--Parks linkove -->
+                                    <li><a  href="">Друго местенце</a></li>
+								</ul>
+							</li>
+							<li><a href="#Login" data-toggle="modal" id="nav_button">Вход</a></li>
+                            <li><a href="#Register" data-toggle="modal" id="nav_button">Регистрация</a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+        <!--Slide Show-->
+		<div id="carousel-example" class="carousel slide" data-ride="carousel">
+	  
+	  <!-- Indikatori -->
+		  <ol class="carousel-indicators">
+			<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example" data-slide-to="1"></li>
+			<li data-target="#carousel-example" data-slide-to="2"></li>
+		  </ol>
+
+		  <!-- dvijenie -->
+		  
+		  
+		  <div class="carousel-inner">
+			<div class="item active">
+				<a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Wide_angle_tetons.jpg"></a><!--advame si parkovete -->
+					<div class="container">
+						<div class="carousel-caption">						
+							<h1>Искаш да се видиш с някой в парка?</h1>
+						</div>	
+					</div>	
+			</div>
+				
+			<div class="item">
+				<a href=""><img src="http://thecardboardcafe.com/wp-content/uploads/2014/09/cafe-wide-1800x800.jpg"></a><!--advame kafencata -->
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Искаш да излезеш с някой на по едно кафе?</h1>
+						</div>	
+					</div>		
+			</div>
+			
+			<div class="item">
+				<a href=""><img src=""></a>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Просто искаш да излезш и да се разведиш с някой?</h1><!--advame si drugite + pic -->
+						</div>	
+					</div>		
+			</div>  
+		</div>	
+		
+		  <!-- Kontroli -->
+		  
+		  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		  </a>
+		</div>
+
+            
+		<!--Content-->
+            
+		<div id="content">
+			<div class="container">
+				<div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                            <div class="page-header"><h2><a href="#">За какво е нашия сайт?</a></h2></div>
+                        <p>Сашо и божо са тука за да ти каат.</p>
+                        <a href="" class="btn btn-info">Прочети още за сайтове за запознанства.</a><!--Link kakvo e sait za zapoznastava ako iskame -->
+                        </div>
+                        </div>
+                    </div>
+                    
+                     <div class="col-md-6">
+                         <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="page-header"><h2><a href="#">Какво печелиш ако използваш сайтчето ни.</a></h2></div>
+                        <ol>
+                            <li><h4>сашо и божо са на ход врат</h4>
+                                <p>Блах</p>
+                            </li>
+                        </ol>
+                        </div>
+                    </div>
+                </div>
+                </div>
+			</div>
+		</div>
+		
+		
+		
+		<!--FOOTER-->
+		<div id="footer">
+			<div class = "navbar navbar-default navbar-fixed-bottom">
+				<div class = "container">
+					<p class ="navbar-text">Сайта е направен от Heros and Zeros.</p>
+					<a class="navbar-button btn-danger btn pull-right" href="#terms" data-toggle="modal">Terms and Conditions</a>
+				</div>
+			</div>
+		</div>
+ 
+        <!-- Login -->
+		<div class = "modal fade" id ="Login" role = "dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+                    <form class="form-horizontal" action='/login/' method="POST">
+	
+			{% csrf_token %}
+		        <div class="modal-header">
+                           <h3>Вход:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class= "form-group">
+                                <label for = "name" class="col-lg-2 control-label">Username:</label>
+                                
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="name" placeholder="Your name" name="username">
+                                </div>
+                            </div>
+                            <div class= "form-group">
+                                <label for = "email" class="col-lg-2 control-label">Password:</label>
+                                
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="email"  name="password" placeholder="Your password">
+                                </div>
+                            </div>
+                            
+                        </div>
+					   <div class="modal-footer">
+                           <a class="btn btn-default" data-dismiss = "modal">Cancel</a>
+                           <button class="btn btn-primary" type="submit">Log in</button>
+					   </div>
+                    </form>
+				</div>
+			</div>
+		</div>
+      <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->      
+		
+		<!-- Register -->
+		<div class = "modal fade" id ="Register" role = "dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+                    <form class="form-horizontal">
+					   <div class="modal-header">
+                           <h3>Регистрация:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class= "form-group">
+                                <label for = "name" class="col-lg-2 control-label">Name:</label>
+                                
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class= "form-group">
+                                <label for = "email" class="col-lg-2 control-label">Email:</label>
+                                
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="email" placeholder="Your email">
+                                </div>
+                            </div>
+                            <div class= "form-group">
+                                <label for = "email" class="col-lg-2 control-label">Confirm email:</label>
+                                
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="email" placeholder="Confirm email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class ="col-lg-2 control-label">Password</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                            </div>
+                            
+                        </div>
+					   <div class="modal-footer">
+                           <a class="btn btn-default" data-dismiss = "modal">Cancel</a>
+                           <button class="btn btn-primary" type="submit">Submit</button>
+					   </div>
+                    </form>
+				</div>
+			</div>
+		</div>
+
+		
+		
+        <!--TERMS-->
+		<div class = "modal fade" id ="terms" >
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3></h3><!--davame terms -->
+					</div>
+					<div class="modal-boddy">
+					<p></p><!--davame samite terms -->
+					</div>
+					<div class="modal-footer">
+					<a class="btn btn-default" data-dismiss = "modal">Close</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "/static/js/bootstrap.js"></script>   
+        </body>
+</html>
