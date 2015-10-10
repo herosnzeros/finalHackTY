@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     # url(r'^', views.index),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', index),
+    url(r'^homepage', index),
     url(r'^profile/$', profile),
     url(r'^login/$', login , {"template_name":"login.html"}),
 )
