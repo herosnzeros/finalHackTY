@@ -6,9 +6,9 @@
                 <title>Намери местенце за отдих</title>
                 <link rel="icon" type="image/jpg" href=""><!--Icon za top -->
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link href = "css/bootstrap.min.css" rel = "stylesheet">
-                <link href = "css/styles.css" rel = "stylesheet">
-				<link rel="stylesheet" type="text/css" href="mystyle.css">
+                <link href = "/static/css/bootstrap.min.css" rel = "stylesheet">
+                <link href = "/static/css/styles.css" rel = "stylesheet">
+				<link rel="stylesheet" type="text/css" href="/static/mystyle.css">
         </head>
         <body>
 		
@@ -46,7 +46,7 @@
 									<li><a href="homepage.html">Hello {{ user }}</a>	
 							{% else %}
 									<li><a href="#Login" data-toggle="modal" id="nav_button">Вход</a></li>
-  					                          <li><a href="#Register" data-toggle="modal" id="nav_button">Регистрация</a></li>
+  					                          	<li><a href="#Register" data-toggle="modal" id="nav_button">Регистрация</a></li>
 							{% endif %} 
 
 						</ul>
@@ -58,19 +58,34 @@
 		<nav>
 		<!--Content-->
             
+
+		{ % if user.is_authenticated %}
+		
 		<div id="content">
 			<div class="container">
 				<div class = "jumbotron">
 					<h1>Да се видим в кафе?</h1>
 					<div></div><!--  za GMaps -->
-					<p>Tuka shte se ppoplni.</p>
+					<!--<p></p> -->
 					<a href="#Create" data-toggle="modal" class="btn btn-info">Create room</a>
 					<a href="#Join" data-toggle="modal" class="btn btn-info">Join room</a>
 				</div>
 			</div>
 		</div>
 		
+		{ % else %}
 		
+		
+		<div id="content">
+			<div class="container">
+				<div class = "jumbotron">
+					<h1><span style="color: #337AB7;">Здравей, за да започнеш ще трябва да си направиш безплатен акаунт!</span></h>
+					<p></p>
+					<div></div><!--  za GMaps -->
+					<p>Tuka shte se ppoplni.</p>
+				</div>
+			</div>
+		</div>
 		
 		<!--FOOTER-->
 		<div id="footer">

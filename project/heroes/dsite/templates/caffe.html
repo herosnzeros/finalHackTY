@@ -46,7 +46,7 @@
 									<li><a href="homepage.html">Hello {{ user }}</a>	
 							{% else %}
 									<li><a href="#Login" data-toggle="modal" id="nav_button">Вход</a></li>
-  					                          <li><a href="#Register" data-toggle="modal" id="nav_button">Регистрация</a></li>
+  					                          	<li><a href="#Register" data-toggle="modal" id="nav_button">Регистрация</a></li>
 							{% endif %} 
 
 						</ul>
@@ -58,20 +58,38 @@
 		<nav>
 		<!--Content-->
             
+
+		{% if user.is_authenticated %}
+		
 		<div id="content">
 			<div class="container">
 				<div class = "jumbotron">
 					<h1>Да се видим в кафе?</h1>
 					<div></div><!--  za GMaps -->
-					<p>Tuka shte se ppoplni.</p>
+					<!--<p></p> -->
 					<a href="#Create" data-toggle="modal" class="btn btn-info">Create room</a>
 					<a href="#Join" data-toggle="modal" class="btn btn-info">Join room</a>
 				</div>
 			</div>
 		</div>
 		
+		{% else %}
 		
 		
+		<div id="content">
+			<div class="container">
+				<div class = "jumbotron">
+					<h1><span style="color: #337AB7;">Error 404:Profile not found</span></h>
+					<p>Преди да станеш играч трябва да си въведеш акаунта!</p>
+					<p>За да си влезнеш в безплатения акаунт моля натисни бутона отдолу!</p>
+					<a href="/login" data-toggle="modal" class="btn btn-info">Регистрирай се!</a>
+					<div></div><!--  za GMaps -->
+				</div>
+			</div>
+		</div>
+		
+		{% endif %}
+
 		<!--FOOTER-->
 		<div id="footer">
 			<div class = "navbar navbar-default navbar-fixed-bottom">
