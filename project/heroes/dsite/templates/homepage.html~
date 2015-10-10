@@ -42,7 +42,7 @@
 							<li>
 								<a href="#" class="dropdown" id="nav_button" data-toggle="dropdown">Къде да се срещнем?<b class = "caret"></b></a>
 								<ul class = "dropdown-menu">
-									<li><a id="nav_button_toggle" href="cafe.html">Кафенета</a></li><!--link kym kafenceto -->
+									<li><a id="nav_button_toggle" href="">Кафенета</a></li><!--link kym kafenceto -->
 									<li><a  href="">Паркове</a></li><!--Parks linkove -->
                                     <li><a  href="">Друго местенце</a></li>
 								</ul>
@@ -70,6 +70,7 @@
 		  <ol class="carousel-indicators">
 			<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel-example" data-slide-to="1"></li>
+			<li data-target="#carousel-example" data-slide-to="2"></li>
 		  </ol>
 
 		  <!-- dvijenie -->
