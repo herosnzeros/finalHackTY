@@ -54,7 +54,7 @@
 							<li class="active"><a id="nav_button" href="homepage.html">Начална Странца</a><li>
 							<li><a href="" id="nav_button">Форум</a></li><!--Vryzka s forumcheto ako ima takoa ako ne zdrave da e -->
 							<li>
-								<a href="#cafe.html" class="dropdown" id="nav_button" data-toggle="dropdown">Къде да се срещнем?<b class = "caret"></b></a>
+								<a href="#" class="dropdown" id="nav_button" data-toggle="dropdown">Къде да се срещнем?<b class = "caret"></b></a>
 								<ul class = "dropdown-menu">
 									<li><a id="nav_button_toggle" href="cafe.html">Кафенета</a></li><!--link kym kafenceto -->
 									<li><a  href="">Паркове</a></li><!--Parks linkove -->
@@ -64,7 +64,7 @@
 									<li><a href="homepage.html">Hello {{ user }}</a>	
 							{% else %}
 									<li><a href="#Login" data-toggle="modal" id="nav_button">Вход</a></li>
-  					                          <li><a href="#Register" data-toggle="modal" id="nav_button">Регистрация</a></li>
+  					                          	<li><a href="#Register" data-toggle="modal" id="nav_button">Регистрация</a></li>
 							{% endif %} 
 
 						</ul>
@@ -75,21 +75,43 @@
 		</div>
 		<nav>
 		<!--Content-->
+<<<<<<< HEAD
             	<center><div id="googleMap" style = "width:820px; height: 380px;"></div></center>
+=======
+            
+
+		{% if user.is_authenticated %}
+		
+>>>>>>> 71be17852c7c14f3aa86af24284a30a9ae83ac7b
 		<div id="content">
 			<div class="container">
 				<div class = "jumbotron">
 					<h1>Да се видим в кафе?</h1>
 					<div></div><!--  za GMaps -->
-					<p>Tuka shte se ppoplni.</p>
+					<!--<p></p> -->
 					<a href="#Create" data-toggle="modal" class="btn btn-info">Create room</a>
 					<a href="#Join" data-toggle="modal" class="btn btn-info">Join room</a>
 				</div>
 			</div>
 		</div>
 		
+		{% else %}
 		
 		
+		<div id="content">
+			<div class="container">
+				<div class = "jumbotron">
+					<h1><span style="color: #337AB7;">Error 404:Profile not found</span></h>
+					<p>Преди да станеш играч трябва да си въведеш акаунта!</p>
+					<p>За да си влезнеш в безплатения акаунт моля натисни бутона отдолу!</p>
+					<a href="/login" data-toggle="modal" class="btn btn-info">Регистрирай се!</a>
+					<div></div><!--  za GMaps -->
+				</div>
+			</div>
+		</div>
+		
+		{% endif %}
+
 		<!--FOOTER-->
 		<div id="footer">
 			<div class = "navbar navbar-default navbar-fixed-bottom">
