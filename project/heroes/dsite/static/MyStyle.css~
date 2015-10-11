@@ -43,4 +43,12 @@ h1,h2,h3{
 .navbar-toggle .icon-bar{
     background-color: black;
 }
-
+#map{
+	width: 500px;
+	height: 400px;
+	background-color: #CCC;
+}
+#googleMap{
+	width: 820px;
+	height: 520px;
+}
